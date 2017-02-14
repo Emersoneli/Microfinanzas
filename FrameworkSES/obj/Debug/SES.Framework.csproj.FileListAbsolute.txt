@@ -1,0 +1,10 @@
+C:\Users\fred.torres\documents\visual studio 2012\Projects\ProyectoSES\FrameworkSES\bin\Debug\FrameworkSES.dll.config
+C:\Users\fred.torres\documents\visual studio 2012\Projects\ProyectoSES\FrameworkSES\bin\Debug\FrameworkSES.dll
+C:\Users\fred.torres\documents\visual studio 2012\Projects\ProyectoSES\FrameworkSES\bin\Debug\FrameworkSES.pdb
+C:\Users\fred.torres\documents\visual studio 2012\Projects\ProyectoSES\FrameworkSES\obj\Debug\FrameworkSES.dll
+C:\Users\fred.torres\documents\visual studio 2012\Projects\ProyectoSES\FrameworkSES\obj\Debug\FrameworkSES.pdb
+C:\RMG\MicroFinanzas\Fuentes\ProyectoSES\FrameworkSES\bin\Debug\FrameworkSES.dll.config
+C:\RMG\MicroFinanzas\Fuentes\ProyectoSES\FrameworkSES\bin\Debug\FrameworkSES.dll
+C:\RMG\MicroFinanzas\Fuentes\ProyectoSES\FrameworkSES\bin\Debug\FrameworkSES.pdb
+C:\RMG\MicroFinanzas\Fuentes\ProyectoSES\FrameworkSES\obj\Debug\FrameworkSES.dll
+C:\RMG\MicroFinanzas\Fuentes\ProyectoSES\FrameworkSES\obj\Debug\FrameworkSES.pdb
