@@ -1,0 +1,84 @@
+﻿<!--ng-model      : nombre con el cual se identificará desde el js de angular para captura de informacion y asignacion de valores-->
+<!--ng-controller : nombre del controlador creado en el js angular para ser usado-->
+<!--ng-repeat : nombre del objeto que contiene la informacion enviada desde el js angular del conrolador asignado-->
+<!--ng-click : evento asignado aun boton-->
+<div>
+    <div class='panel panel-primary'  ng-controller='reporteController' >
+        <div class='panel-heading'>:: Reporte de Clientes ::</div>
+        <div class='panel-body'>
+            <div class="form-horizontal form-group">
+	            <label class="col-xs-2 control-label">Código Cliente :</label>
+                <div class="col-xs-3">
+		            <input type="text" ng-model="codigo" class="form-control" placeholder="Ingrese Código" />
+	            </div>
+                <div class="col-xs-3">
+		            <button ng-click="btnBuscarId()" class="btn btn-primary glyphicon glyphicon-search" title="Buscar Código"></button>
+                </div>
+                <div class="col-xs-2">                                
+                    <button ng-click="exportDataXls()" class="btn btn-primary ">Exportar Excel</button>
+	            </div>
+                <div class="col-xs-2">
+                    <button ng-click="exportDataPdf()" class="btn btn-primary ">Exportar Pdf</button>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="form-horizontal form-group">
+	            <label class="col-xs-2 control-label">Nombre Cliente :</label>
+                <div class="col-xs-3">
+		            <input type="text" ng-model="nombre" class="form-control" placeholder="Ingrese Nombre" />
+	            </div>
+                <div class="col-xs-3">
+		            <button ng-click="btnBuscarStr()" class="btn btn-primary glyphicon glyphicon-search" title="Buscar Nombre"></button>
+                </div> 
+                <div class="col-xs-4">
+                    <p />
+                    <p style="color:red;"><b>{{message2}}</b></p>  
+                </div>           
+            </div>
+	        <br />
+            <br />
+
+            <!--inicio del objeto tabla-->
+            <div id="exportable">
+                <table class='table table-striped table-bordered table-hover'>
+	                <!--inicio de la cabecera de la tabla-->
+                    <thead>
+		                <tr>
+			                <th>Item</th>
+			                <th>Nombres</th>
+			                <th>Apellidos</th>
+			                <th>Sexo</th>
+			                <th>Direccion</th>
+                            <th>Código</th>
+		                </tr>
+	                </thead>
+                    <!--fin de la cabecera de la tabla-->
+
+                    <!--inicio del contenido de la tabla-->
+	                <tbody>
+		                <tr ng-repeat="oClientes in lstClientes">
+			                <td align="center" width="5px">{{lstClientes.indexOf(oClientes)+1}}</td>
+			                <td>{{oClientes.Nombre}}</td>
+			                <td>{{oClientes.Apellido}}</td>
+			                <td align="center" width="5px">{{oClientes.Sexo}}</td>
+			                <td>{{oClientes.Direccion}}</td>
+                            <td align="center" width="5px">{{oClientes.Id}}</td>
+		                </tr>
+	                </tbody>
+                    <!--fin deL contenido de la tabla-->
+                </table>
+            </div>
+            <!--fin del objeto tabla-->            
+        </div>
+        <div class="panel-footer">
+            <ul class='pagination pagination-sm'>
+	            <li class="{{class1}}"><span ng-click="btnGoBack()">&laquo;</span></li>
+	            <li class='active'><span>{{PageNumber}}</span></li>
+	            <li class="{{class3}}"><a>{{PageNumber2}}</a></li>
+	            <li class="{{class2}}"><span ng-click="btnGoNext()" >&raquo;</span></li>
+                <li><div class="col-xs-1"><input type="text" ng-model="nroFilasxPag" id="nroFilasxPag" class="form-control" /></div></li>                
+            </ul>
+        </div>            
+    </div>
+</div>

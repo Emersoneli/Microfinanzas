@@ -1,0 +1,148 @@
+﻿<!--ng-model      : nombre con el cual se identificará desde el js de angular para captura de informacion y asignacion de valores-->
+<!--ng-controller : nombre del controlador creado en el js angular para ser usado-->
+<!--ng-click : evento asignado aun boton-->
+<div>
+    <input type="hidden" ng-model="codigo_oculto" />
+    <!--aqui definimos el llamado al controller js creado para la template-->
+    <div class='panel panel-primary'  ng-controller='clienteController'  >
+        <div class='panel-heading'><div id='tituloform'>:: Registro de Datos Persona Jurídica ::</div></div>
+        <div class='panel-body'>
+        <form class="form-horizontal" >
+
+            <!--inicio del objeto text-->
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Código Persona:</label>
+                <div class="col-xs-8">
+                    <input type="text" ng-model="codpersona" class="form-control" required placeholder="Ingrese cod. persona" />
+                </div>
+            </div>
+            
+            <!--fin del objeto text
+            <div ng-app="miAplicacion" ng-controller="fechaController" align="center">
+               <span id ="fecha">{{CurrentDate | date:'dd-MM-yyyy'}}</span>
+            </div>
+            <!--inicio del objeto text-->
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Razón Social:</label>
+                <div class="col-xs-8">
+                    <input type="text" ng-model="rasocial" class="form-control" required placeholder="Ingrese su razón Social" />
+                </div>
+            </div>
+            <!--fin del objeto text-->
+
+            <!--inicio del objeto text-->
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Tipo de actvidad:</label>
+                <div class="col-xs-8">
+                    <select ng-model="tipoactividad" class="form-control" required placeholder="Seleccione Tipo Actividad" ng-options="x for (x, y) in tipactividad">
+                        <option value="option-1" class="col-xs-2 control-label">Seleccione</option>
+                        <option value="option-2" class="col-xs-2 control-label">Comerciante</option>
+                        <option value="option-3" class="col-xs-2 control-label">Agricultor</option>
+                    </select>
+                </div>
+            </div>
+            <!--fin del objeto text-->
+
+            <!--inicio del objeto text-->
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Giro:</label>
+                <div class="col-xs-8">
+                    <input type="text" ng-model="giro" class="form-control" required placeholder="Ingrese su giro" />
+                </div>
+            </div>
+            <!--fin del objeto text-->
+
+            <!--inicio del objeto text-->
+            <div class="form-group">
+                <label class="col-xs-2 control-label" >Inicio de actividad:</label>
+                <div class="col-xs-8">
+                    <input type="text" ng-model="inicioactividad" class="form-control" required placeholder="Ingrese inicio de actividad DD/MM/YYYY" />
+                </div>
+            </div>
+            <!--fin del objeto text-->
+
+                <!--inicio del objeto text-->
+                <div class="form-group">
+                    <label class="col-xs-2 control-label">Tipo de Localidad:</label>
+                    <div class="col-xs-8">
+                        <select ng-model="tipoactividad" class="form-control" required placeholder="Seleccione Tipo localidad" ng-options="x for (x, y) in tipactividad">
+                            <option value="option-1" class="col-xs-2 control-label">Seleccione</option>
+                            <option value="option-2" class="col-xs-2 control-label">Lima</option>
+                            <option value="option-3" class="col-xs-2 control-label">Chorrillos</option>
+                        </select>
+                    </div>
+                </div>
+                <!--fin del objeto text-->
+
+
+                <!--inicio del objeto text-->
+                <div class="form-group">
+                    <label class="col-xs-2 control-label">URL:</label>
+                    <div class="col-xs-8">
+                        <input type="text" ng-model="url" class="form-control" required placeholder="Ingrese URL" />
+                    </div>
+                </div>
+                <!--fin del objeto text-->
+
+                <!--inicio del objeto text-->
+                <div class="form-group">
+                    <label class="col-xs-2 control-label">Nombre Comercio:</label>
+                    <div class="col-xs-8">
+                        <input type="text" ng-model="nomcomer" class="form-control" required placeholder="Ingrese Nombre comercio" />
+                    </div>
+                </div>
+                <!--fin del objeto text-->
+
+                <!--inicio del objeto text-->
+                <div class="form-group">
+                    <label class="col-xs-2 control-label">Usuario de Alta:</label>
+                    <div class="col-xs-8">
+                        <input type="text" ng-model="usualta" class="form-control" required placeholder="Ingrese Usuario Alta" />
+                    </div>
+                </div>
+                <!--fin del objeto text-->
+                
+            <!--inicio del objeto text-->
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Fech ade Alta:</label>
+                <div class="col-xs-8">
+                    <input type="text" ng-model="fechaalta" class="form-control" required placeholder="Ingrese Fecha alta DD/MM/YYYY" />
+                </div>
+            </div>
+            <!--fin del objeto text-->
+                <!--inicio del objeto button-->
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-6">
+                        <button style="width:auto" ng-click="btnAceptar()" class="btn btn-primary glyphicon glyphicon-save" data-toggle="modal" data-target="#myModal" title="Guardar cambios"></button>&nbsp;&nbsp;
+                        <a style="width:auto" href="#listado" class="btn btn-primary glyphicon glyphicon-remove" title="Regresar sin efectuar cambios"></a>
+                    </div>
+                </div>
+
+</form>
+        </div>
+        <!--fin del objeto button-->
+        <!--Fin de panel de DATOS PERSONALES-->
+        
+        <!--inicio del contenedor modal-->
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Proyecto SES</h4>
+                    </div>
+		
+                    <div class="modal-body"> 
+                        <p />                  
+                        <p><b style="color:red">{{message}}</b></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--fin del contenedor modal-->
+    </div>
+</div>
+

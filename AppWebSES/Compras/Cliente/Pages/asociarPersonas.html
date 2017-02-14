@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <input type="hidden" ng-model="codigo_oculto" />
+        <!--aqui definimos el llamado al controller js creado para la template-->
+        <div class='panel panel-primary' ng-controller='clienteController'>
+            <div class='panel-heading'><div id='tituloform'>:: Asociar Personas. ::</div></div>
+            <div class='panel-body'>
+                <form class="form-horizontal">
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Rol:</label>
+                        <div class="col-xs-8">
+                            <!--<input type="text" ng-model="nombres" class="form-control" required placeholder="Ingrese Nombres" />-->
+                            <select ng-model="selectedRol" class="form-control" required placeholder="Seleccione Rol" ng-options="x for (x, y) in cars"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Tipo de Documento:</label>
+                        <div class="col-xs-8">
+                            <!--<input type="text" ng-model="nombres" class="form-control" required placeholder="Ingrese Nombres" />-->
+                            <select ng-model="selectedCar" class="form-control" required placeholder="Seleccione Tipo Documento" ng-options="x for (x, y) in cars"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Nro. Documento :</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="nrodocumento" class="form-control" required placeholder="Ingrese Nro. Documento" />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Apellido Paterno:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="apepaterno" class="form-control" required placeholder="Ingrese apellido paterno"  />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Apellido Materno:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="apematerno" class="form-control" required placeholder="Ingrese apellido materno"  />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Primer Nombre:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="primernombre" class="form-control" required placeholder="Ingrese primer nombre"  />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Segundo Nombre:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="segundonombre" class="form-control" required placeholder="Ingrese segundo nombre"  />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Tercer Nombre:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="tercernombre" class="form-control" required placeholder="Ingrese tercer nombre"  />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Tipo de ingreso:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedTipoI" class="form-control" required placeholder="Tipo de ingreso" ng-options="x for (x, y) in ingreso"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto SELECT-->
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Ocupación:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedAFP" class="form-control" required placeholder="AFP" ng-options="x for (x, y) in cars"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto SELECT-->
+
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Fecha de Nacimiento:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="fechanac" class="form-control" required placeholder="Ingrese fecha nacimiento DD/MM/YYYY" />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Estado Civil:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedEstadoc" class="form-control" required placeholder="Estado Civil" ng-options="x for (x, y) in cars"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Nivel de educación:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedNivEdu" class="form-control" required placeholder="Nivel de educación" ng-options="x for (x, y) in cars"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">AFP:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedAFP" class="form-control" required placeholder="AFP" ng-options="x for (x, y) in cars"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Sexo:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedSexo" class="form-control" required placeholder="Sexo" ng-options="x for (x, y) in cars"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto Select-->
+
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Inicio de Actividad:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="inicioAct" class="form-control" required placeholder="Ingrese inicio de actividad" />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Relación Laboral:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedRelaLab" class="form-control" required placeholder="Sexo" ng-options="x for (x, y) in relacion"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto Select-->
+
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Celular:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="celular" class="form-control" required placeholder="Ingrese celular" />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Nacionalidad:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedNacionalidad" class="form-control" required placeholder="Nacionalidad" ng-options="x for (x, y) in relacion"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto Select-->
+                    <!--inicio del objeto text-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Número de Hijos:</label>
+                        <div class="col-xs-8">
+                            <input type="text" ng-model="hijos" class="form-control" required placeholder="Ingrese cantidad de Hijos" />
+                        </div>
+                    </div>
+                    <!--fin del objeto text-->
+                    <!--inicio del objeto SELECT-->
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Cargo:</label>
+                        <div class="col-xs-8">
+                            <select ng-model="selectedCargo" class="form-control" required placeholder="Cargo" ng-options="x for (x, y) in cargo"></select>
+                        </div>
+                    </div>
+                    <!--fin del objeto Select-->
+
+                </form>
+            </div>
+          
+            <div class="panel-footer">
+                <!--inicio del objeto button-->
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-6">
+                        <button style="width:auto" ng-click="btnAceptar()" class="btn btn-primary glyphicon glyphicon-save" data-toggle="modal" data-target="#myModal" title="Guardar cambios"></button>&nbsp;&nbsp;
+                        <a style="width:auto" href="#listado" class="btn btn-primary glyphicon glyphicon-remove" title="Regresar sin efectuar cambios"></a>
+                    </div>
+                </div>
+                <!--fin del objeto button-->
+            </div>
+
+            <!--inicio del contenedor modal-->
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Proyecto SES</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <p />
+                            <p><b style="color:red">{{message}}</b></p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin del contenedor modal-->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+﻿#nom_proyecto {
+    margin-left:0px;   
+    margin-right:0px; 
+    background: #054b87;
+    width: auto;    
+    color: #ffffff;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    text-align: center;
+    height:30px;
+    padding: 7px 0 0 0;
+    margin-top: 10px;
+}
+
+ #nom_proyecto b {       
+        text-align: center;
+        font: bold 12px Arial, Helvetica, sans-serif;
+ }
+
+.navbar-default {
+    /*background: #31AADE;
+    color: #ffffff;*/
+    font: bold 12px Arial, Helvetica, sans-serif;
+}
+
+.navbar-header {
+    background: #31AADE;
+    font: bold 12px Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 13px;
+}
+
+.navbar-default .navbar-brand {
+    color:#002663;
+}
+
+.navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-collapse {
+    background-color: rgb(227, 234, 235);
+    color:#002663;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #002663;
+    font: bold 11px Arial, Helvetica, sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #002663;
+    font: bold 11px Arial, Helvetica, sans-serif;
+}
+
+.panel-title {
+    color: #002663;
+    font: bold 11px Arial, Helvetica, sans-serif;
+}
+
+.panel-body {
+    padding: 5px 0px 0px 0px;
+    font-size: 11px;
+    background-color:  #FFFFFF;/*rgb(247, 248, 250);*/
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color: #002663;
+}
+
+.panel-body > table > tbody {
+    font-size: 11px;    
+}
+
+.panel-group {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.panel-primary > .panel-heading {
+    background-image: none;
+    background-repeat: no-repeat;
+    color: #054b87; /*#002663;*/
+    background-color: rgb(198, 213, 215);
+    border-color: rgb(198, 213, 215);
+    /*height: 10px;*/
+}
+
+.panel-default > .panel-heading {
+    /*background: #31AADE;*/
+    background:rgb(198, 213, 215);
+    color: #002663;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    /*height: 10px;*/
+}
+
+body {
+    /*background: #31AADE;*/
+    font: bold 14px italic;
+    color: #002663;
+    font-style:italic;
+}
+
+#tituloform {
+    font-style:italic
+}
+
+#pie
+{
+    margin-top: -10px;
+    padding-top:15px;
+    background: #054b87;
+    width: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Calibri;
+     height:47px;
+}
+
+.form-horizontal .control-label {
+     color: #002663;
+     font:  12px Calibri;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+#nroFilasxPag {
+    height:30px;
+}
+
+#container {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#logo-ses {
+    margin-top:10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:10px;
+    height:65px;
+    width:auto
+}
+
+ul, ol {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+}
+
+li {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.col-sm-10 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-sm-2 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+table {
+    background-color: #e0f1f8;
+}
+
+.pagination {
+    margin:5px 5px;
+    display:block
+}
+
+.panel-footer {
+    padding:0px 0px 0px 0px;
+    height: 40px;
+}
+
+.table {
+    margin-bottom : 10px
+}
+
+.btn-primary {
+    background : #31AADE
+}
+
+.container-fluid > .navbar-header {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.panel-footer {
+    font: bold 12px calibri;
+}
